@@ -1,0 +1,41 @@
+{
+  "name": "react-native-es6",
+  "version": "0.1.0",
+  "description": "react-native ES6 package base, use babel to transform those things react-native doesn't process yet",
+  "main": "index.js",
+  "scripts": {
+    "test": ".bin/test",
+    "prepublish": ".bin/compile",
+    "postpublish": ".bin/clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UXtemple/react-native-es6"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "es6",
+    "package",
+    "base",
+    "babel"
+  ],
+  "author": "UXtemple <hi@uxtemple.com>",
+  "contributors": [
+    "Darío Javier Cravero <dario@uxtemple.com>",
+    "Tom Parandyk <tom@uxtemple.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UXtemple/react-native-es6/issues"
+  },
+  "homepage": "https://github.com/UXtemple/react-native-es6",
+  "dependencies": {
+    "react-native": "^0.4.1"
+  },
+  "devDependencies": {
+    "babel": "^5.2.6",
+    "mocha": "^2.2.4",
+    "sinon": "^1.14.1"
+  }
+}

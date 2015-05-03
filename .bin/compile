@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+FILES=`find . -name '*.es6' -type f -not -path './node_modules/*' | tr "\\n" " " | sed "s/\.\///g"`
+BLACKLIST="es6.arrowFunctions \
+  es6.classes \
+  es6.destructuring \
+  es6.forOf \
+  es6.parameters.rest \
+  es6.properties.computed \
+  es6.properties.shorthand \
+  es6.templateLiterals \
+  es7.objectRestSpread"
+
+echo $FILES
+
+./node_modules/.bin/babel --only $FILES --blacklist $BLACKLIST --out-dir . .
